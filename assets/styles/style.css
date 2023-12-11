@@ -16,28 +16,74 @@
 
 body {
   background-color: #020712;
+  color: white;
 }
 
 p,
 a,
-li {
-  font-size: 1.375rem;
+li,
+select,
+option {
+  font-size: clamp(1rem, 0.9013rem + 0.4386vw, 1.375rem);
   letter-spacing: 0%;
 }
 
+.text-hero {
+  font-size: clamp(2.16875rem, 0.2806rem + 8.3918vw, 9.34375rem);
+}
+
 .text-h1 {
-  font-size: 3rem;
+  font-size: clamp(1.75rem, 1.3128rem + 1.7937vw, 3.25rem);
   line-height: 4.375rem;
 }
 
 .text-h2 {
-  font-size: 2rem;
+  font-size: clamp(1rem, 0.7368rem + 1.1696vw, 2rem);
 }
 
 .text-footer {
   font-size: 1.125rem;
 }
 
+.text-stat-number {
+  font-size: clamp(2.5rem, 2.0947rem + 1.6629vw, 3.890625rem);
+}
+
+.text-stat {
+  font-size: clamp(1.25rem, 1.056rem + 0.796vw, 1.915625rem);
+}
+
+.text-stat-vokemon {
+  font-size: clamp(1.5rem, 4.386vw + 0.513rem, 5.25rem);
+}
+
+.aspect-hero {
+  aspect-ratio: 370 / 640;
+}
+
+.hero-index {
+  aspect-ratio: 370 / 574;
+}
+
+.aspect-stat {
+  aspect-ratio: 306 /342;
+}
+
 #text-roboto {
   font-family: "Roboto-mono", Arial, Helvetica, sans-serif;
+}
+
+.voke-tag {
+  clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
+  -webkit-clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero-index {
+    aspect-ratio: 1797 / 1049;
+  }
+
+  .aspect-hero {
+    aspect-ratio: 3 / 2;
+  }
 }
