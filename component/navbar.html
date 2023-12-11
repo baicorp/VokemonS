@@ -1,0 +1,72 @@
+<nav
+  class="absolute top-0 w-full text-xl bg-gradient-to-b from-[#060D1D] lg:pt-2 pb-6 lg:pb-16 from-50% text-white z-50"
+>
+  <div class="mx-10">
+    <div
+      class="w-full max-w-[1488px] mx-auto flex justify-between items-center"
+    >
+      <img
+        src="./assets/images/vokemon.png"
+        alt="website-logo"
+        class="w-14 lg:w-36"
+      />
+      <div class="hidden lg:block">
+        <ul class="flex gap-[50px]">
+          <li>
+            <a href="/index.html" id="navbar-item">HOME</a>
+          </li>
+          <li><a href="/news.html" id="navbar-item">NEWS</a></li>
+          <li><a href="/vokemon.html" id="navbar-item">VOKEMON</a></li>
+          <li>
+            <a href="/tournament.html" id="navbar-item">TOURNAMEN</a>
+          </li>
+        </ul>
+      </div>
+      <div class="flex gap-[5px]">
+        <a href="/register.html">
+          <div class="relative w-16 lg:w-[180px]">
+            <img src="./assets/images/border-register.png" alt="" />
+            <p
+              class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"
+            >
+              REGISTER
+            </p>
+          </div>
+        </a>
+        <button class="lg:hidden" id="hamburger-btn">
+          <img
+            src="./assets/icons/hamburger-btn.svg"
+            id="hamburger-btn-img"
+            alt=""
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    class="fixed h-screen -top-full transition-all w-full px-10 py-4 bg-[#02071255] backdrop-blur-3xl"
+    id="close-menu-container"
+  >
+    <div class="flex flex-col justify-center items-center h-full">
+      <button class="fixed top-5 right-10" id="close-menu-btn">
+        <img src="./assets/icons/close-button.svg" alt="" class="w-4 h-4" />
+      </button>
+      <ul class="w-full flex flex-col items-center gap-4">
+        <li>
+          <a href="/index.html" id="navbar-item" class="text-2xl">HOME</a>
+        </li>
+        <li>
+          <a href="/news.html" id="navbar-item" class="text-2xl">NEWS</a>
+        </li>
+        <li>
+          <a href="/vokemon.html" id="navbar-item" class="text-2xl">VOKEMON</a>
+        </li>
+        <li>
+          <a href="/tournament.html" id="navbar-item" class="text-2xl"
+            >TOURNAMEN</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
