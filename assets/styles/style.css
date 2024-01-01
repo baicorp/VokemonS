@@ -70,6 +70,10 @@ option {
   aspect-ratio: 306 /342;
 }
 
+.clip-btn {
+  clip-path: polygon(100% 0%, 100% 70%, 90% 100%, 0 100%, 0 30%, 10% 0);
+}
+
 #text-roboto {
   font-family: "Roboto-mono", Arial, Helvetica, sans-serif;
 }
